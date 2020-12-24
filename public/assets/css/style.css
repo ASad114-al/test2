@@ -1,5 +1,95 @@
-div
-{
-    text-align: center;
-    color: brown;
+
+@font-face{
+    font-family: 'Scto';
+    src: url('../fonts/SctoGroteskA-Bold.woff2') format('woff2');
+    font-weight: bold;
+}
+@font-face{
+    font-family: 'Scto';
+    src: url('../fonts/SctoGroteskA-Medium.woff2');
+    font-weight: normal;
+}
+@font-face{
+    font-family: 'Scto';
+    src: url('../fonts/SctoGroteskA-Regular.woff2');
+    font-weight: lighter;
+}
+body,h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+.show{
+    display: block;
+}
+.unshow{
+    display: none;
+}
+
+
+.line{
+    height: 80vh;
+    width: 2px;
+    background-color: #f9cdcd;
+    margin: 0 20px;
+}
+.line+div{
+    transform: translateX(30%);
+    margin-top: 10px;
+}
+#hamburger{
+    font-family: 'Scto';
+    background-color: #252422;
+    color: #f9cdcd;
+    height: 100vh;
+    padding: 30px 30px 0 100px;
+    position: fixed;
+}
+#hamburger section:first-of-type{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+#hamburger section:first-of-type p:nth-of-type(2){
+    margin-left: -400px;
+}
+.hamCards{
+    display: flex;    
+    height: 60vh;
+}
+.hamCardsSec{
+    display: flex;
+    width: 32%;
+    height: 90vh;
+}
+.hamCardsArt{
+    overflow: hidden;   
+}
+.hamCardsArt img{
+    height: 75%;
+    width: 100%;
+}
+
+.hamImg:hover{
+    height: 50%;
+}
+.hamImg:hover .hamShowUp{
+    display: block;
+}
+.hamCardsArt h3{
+    margin: 30px auto 10px;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+.hamBtn{
+    font-size: .7em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid #f9cdcd;
+    border-radius: 40px;
+    padding: 10px 30px;
+    color: #f9cdcd;
+    font-weight: bold;
+    background-color: #252422;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

@@ -1,9 +1,182 @@
 
 <%- include('./partials/head') %> 
 
-  <div>
-    <h1>index</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis velit necessitatibus accusamus nesciunt labore. Asperiores, nulla enim iste pariatur quas, inventore quaerat fuga placeat molestiae, eius sit quibusdam illum aliquid.</p>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic-Agency</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/headerFooterBW.css">
+    <link rel="stylesheet" href="assets/css/hamburger.css">
+</head>
+<body>
+    <section id="hamburger" class="unshow"></section>
+    <header id="header">
+        <div><a href="#"><img src="assets/Img/logo.svg" alt=""></a></div>
+        <nav>
+            <ul>
+                <li><a href="assets/html/work.html">Work</a></li>
+                <li><a href="assets/html/about.html">About</a></li>
+                <li><a href="assets/html/news.html">News</a></li>
+                <li><a href="assets/html/thinking.html">Thinking</a></li>
+                <li><a href="assets/html/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div><img src="assets/Img/menu.svg" alt="" onclick="showHam()"></div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>WHAT’S NEXT<br>STARTS</h1>
+            <h1><div class="dot"></div>HERE</h1>
+            <video src="assets/Img/Hero.mp4" autoplay muted loop></video>
+            <hr>
+            <h6>STRATEGY, DESIGN, TECHNOLOGY</h6>
+        </section>
+        <section id="basic">
+            <article>
+                <div>
+                    <h3>BASIC® is a branding and digital design agency building products, services, and ecommerce
+                        experiences that turn cultural values into company value.</h3>
+                    <a class="buttons" href="">See the Work</a>
+                </div>
+                <div><img src="assets/Img/branding-img.svg" alt=""></div>
+            </article>
+            <hr>
+            <h2>FEATURED<br>ENGAGEMENTS</h2>
+        </section>
+        <section id="cards">
+            <div>
+                <img src="assets/Img/Logos/google-dark.svg" alt="">
+                <span></span>
+                <h6>Google</h6>
+                <hr>
+                <p>Our embedded partnership with Google is as deep as it gets. We’re the lead creative agency for Google
+                    Store and provide strategy, design, and prototyping to other divisions.</p>
+            </div>
+            <div>
+                <img src="assets/Img/Logos/patagonia-dark.svg" alt="">
+                <span></span>
+                <h6>Patagonia</h6>
+                <hr>
+                <p>Ongoing partnership providing strategy, branding, experience design, and development focused on
+                    bringing their mission and offerings to consumers through brand-led programs and platforms.</p>
+            </div>
+            <div>
+                <img src="assets/Img/Logos/airbnb-dark.svg" alt="">
+                <span></span>
+                <h6>Airbnb</h6>
+                <hr>
+                <p>Helping the world’s leading peer-to-peer hospitality company with creative vision, experience
+                    strategy, and execution in partnership with various departments and divisions internally at Airbnb.
+                </p>
+            </div>
+            <div>
+                <img src="assets/Img/Logos/herman-miller-resized.svg" alt="">
+                <span></span>
+                <h6>Herman Miller</h6>
+                <hr>
+                <p>A collaborative and performance incentivized partnership with our teams working side by side to
+                    reimagine the digital shopping experiences for Herman Miller, Design Within Reach, and Hay.</p>
+            </div>
+            <div>
+                <img src="assets/Img/Logos/under-armour-dark.svg" alt="">
+                <span></span>
+                <h6>Under Amour</h6>
+                <hr>
+                <p>Strategy, design, and development to differentiate the iconic brand’s direct-to-consumer experience
+                    through an all new omnichannel approach, global eCommerce </p>
+            </div>
+        </section>
+        <section id="basicHelps">
+            <div>
+                <h1>BASIC® HELPS BRANDS <span>●</span>CONNECT W/ CULTURE</h1>
+                <h6>ADWEEK<span>(AGENCY SPOTLIGHT)</span></h6>
+                <a class="buttons" href="">ABOUT US</a>
+            </div>
+            <div><video width="100%" src="assets/Img/Culture.mp4" autoplay muted loop></video></div>
+        </section>
+        <section id="news">
+            <h2>FEATURED <br>NEWS</h2>
+            <hr>
+            <article>
+                <img src="assets/Img/Adweek.jpg" alt="">
+                <div>
+                    <div><h4>BASIC® Deemed One of the World’s Fastest Growing Agencies by Adweek</h4></div>
+                    <div><p>PRESS<span></span>09.25.19</p></div>
+                </div>
+                <div><img src="assets/Img/arrow.svg" alt=""></div>
+            </article>
+            <hr>
+            <article>
+                <img src="assets/Img/brand.jpg" alt="">
+                <div>
+                    <div><h4>The Webby Awards Select BASIC® to Rethink the Future of Their Brand and Digital Platform</h4></div>
+                    <div><p>WORK<span>12.03.19</span></p></div>
+                </div>
+                <div><img src="assets/Img/arrow.svg" alt=""></div>
+            </article>
+            <hr>
+            <article>
+                <img src="assets/Img/Furrion-Partnership.jpg" alt="">
+                <div>
+                    <div><h4>BASIC® and Furrion partner to launch all new eCommerce website built for a D2C future</h4></div>
+                    <div><p>WORK<span></span>08.09.19</p></div>
+                </div>
+                <div><img src="assets/Img/arrow.svg" alt=""></div>
+            </article>
+        </section>
+        
+        <footer>
+            <article>
+                <div>
+                    <img src="assets/Img/footer-logo.svg" alt="">
+                </div>
+                <div>
+                    <h3>We collaborate with ambitious <br> brands and people. <a href="#">Let’s connect :)</a></h3>
+                </div>
+                <div>
+                    <h5><span></span>STAY IN THE KNOW</h5>
+                    <input type="email" name="" id="" placeholder="Email Address">
+                    <hr>
+                </div>
+                <div>
+                    <div>
+                        <h5><span></span>Social</h5>
+                        <a href="">Instagram</a>
+                        <a href="">Twitter</a>
+                        <a href="">Linkedin</a>
+                        <a href="">Facebook</a>
+                    </div>
+                    <div>
+                        <h5><span></span>Initiatives</h5>
+                        <a href="">Crafted</a>
+                        <a href="">Culture Manual</a>
+                        <a href="">Applied</a>
+                        <a href="">Brandbeats</a>
+                        <a href="">Moves</a>
+                    </div>
+                    <div>
+                        <h5><span></span>Offices</h5>
+                        <a href="">San Diego - CA</a>
+                        <a href="">Bay Area - CA</a>
+                        <a href="">St. Louis-MO</a>
+                    </div>
+                </div> 
+            </article>
+            <article>
+                <p>BASIC®, INC 10 - 20©</p>
+                <p>EASY TO UNDERSTAND, IMPOSSIBLE TO IGNORE.™</p>
+                <p>TERMS, PRIVACY POLICY</p>
+            </article>
+        </footer>
+    </main>
+    <script src="assets/js/mainIndex.js"></script>
+</body>
+</html>
 </body>
 </html>
